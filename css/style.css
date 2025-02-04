@@ -6744,7 +6744,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .hero__items {
-    gap: 0.3125rem;
+    gap: 0.9375rem;
   }
 
   .hero__image {
@@ -7748,7 +7748,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .hero__items {
-    gap: 0.3125rem;
+    gap: 0.625rem;
   }
 
   .hero__image {
@@ -8732,6 +8732,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .swiper-button-prev::before {
     width: 2.1875rem;
     height: 2.1875rem;
+  }
+
+  .swiper-button-next {
+    top: 20%;
   }
 
   .swiper-button-next::before {
@@ -9919,15 +9923,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (gap: clamp( 0.3125rem , 0.3125rem  +  0vw , 0.3125rem )) {
+@supports (gap: clamp( 0.625rem , 0.5113636364rem  +  0.5681818182vw , 0.9375rem )) {
     .hero__items {
-      gap: clamp( 0.3125rem , 0.3125rem  +  0vw , 0.3125rem );
+      gap: clamp( 0.625rem , 0.5113636364rem  +  0.5681818182vw , 0.9375rem );
     }
 }
 
-@supports not (gap: clamp( 0.3125rem , 0.3125rem  +  0vw , 0.3125rem )) {
+@supports not (gap: clamp( 0.625rem , 0.5113636364rem  +  0.5681818182vw , 0.9375rem )) {
     .hero__items {
-      gap: calc(0.3125rem + 0 * (100vw - 20rem) / 55);
+      gap: calc(0.625rem + 0.3125 * (100vw - 20rem) / 55);
     }
 }
 
