@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250205002344">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250205225237">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="120" data-scroll-show class="header">
 			<div class="header__container">
 				<div class="header__top">
 					<a href="#" class="header__logo"><img src="img/header/logo.svg" alt="#"></a>
@@ -227,7 +227,7 @@
 			</div>
 		</div>
 		<main class="page">
-			<section class="page__hero hero">
+			<section id="hero" class="page__hero hero">
 				<img class="hero__image-bg" src="img/hero/hero.jpg" alt="#">
 				<div class="hero__container">
 					<div class="hero__content">
@@ -1679,7 +1679,8 @@
 					<h3 class="menu-footer__title">Меню</h3>
 					<nav class="menu-footer__nav">
 						<ul class="menu-footer__list">
-							<li class="menu-footer__item"><a href="#">О нас</a></li>
+							<!-- data-goto="#hero" навигация -->
+							<li class="menu-footer__item"><a data-goto="#hero" href="#">О нас</a></li>
 							<li class="menu-footer__item"><a href="#">Наши работы</a></li>
 							<li class="menu-footer__item"><a href="#">Виды тканей и кожа</a></li>
 							<li class="menu-footer__item"><a href="#">Как мы работаем</a></li>
@@ -1692,7 +1693,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250205002344"></script>
+	<script src="js/app.min.js?_v=20250205225237"></script>
 </body>
 
 </html>
